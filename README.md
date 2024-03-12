@@ -14,3 +14,4 @@ npm i mongoose
 npm install socket.io
 npm install @socket.io/redis-adapter redis
 npm i bunyan
+npm i typescript typescript-transform-paths

@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon -r tsconfig-paths/register src/app.ts | ./node_modules/.bin/bunyan"
+    "dev": "nodemon -r tsconfig-paths/register src/app.ts | ./node_modules/.bin/bunyan",
+    "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json"
   },
   "keywords": [],
   "author": "",
@@ -25,7 +26,9 @@
     "nodemon": "^3.1.0",
     "redis": "^4.6.13",
     "socket.io": "^4.7.4",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.2",
+    "typescript-transform-paths": "^3.4.7",
+    "web3": "^1.7.4"
   },
   "devDependencies": {
     "@types/bunyan": "^1.8.11",
@@ -35,6 +38,7 @@
     "@types/express": "^4.17.21",
     "@types/hpp": "^0.2.6",
     "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.8",
     "tsconfig-paths": "^4.2.0"
   }
 }
